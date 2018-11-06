@@ -7,14 +7,14 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	title := "Jenkins X golang http example something"
+	title := "Jenkins X golang http example something else"
 
 	from := ""
 	if r.URL != nil {
 		from = r.URL.String()
 	}
 	if from != "/favicon.ico" {
-		log.Printf("title: %s\n", title)
+		log.Printf("titlez: %s\n", title)
 	}
 
 	fmt.Fprintf(w, "Hello from:  "+title+"\n")
